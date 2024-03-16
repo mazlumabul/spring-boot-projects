@@ -1,0 +1,25 @@
+
+
+spring:
+  application:
+    name: SpringBootException
+  datasource:
+    url: jdbc:postgresql://localhost:5432/edu_db
+    username: postgres
+    password: 12345
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        ddl-auto: update
+        show-sql: true
+        format_sql: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
